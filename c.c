@@ -1,15 +1,15 @@
 #include<stdio.h>
-#include<math.h>
-void swap(int *a,int *b){
-  *a^=*b;
-  *b^=*a;
-  *a^=*b;
-  printf("%d %d",*a,*b);
-} 
-int main(){
-int a=2;
-int b=4;
-swap(&a,&b);
-return 0;
-}
- 
+#include<stdio.h>
+ int main(){
+  int ar[]={1,10,3,7},t=0,s=0;
+  for(int i=0;i<4;i++){
+    if(ar[i]>t)
+      t=ar[i];
+     
+    if(ar[i]<ar[0])
+       s=ar[i];
+    }
+  printf("Maximum: %d\nMinimum: %d",t,s);
+  return 0;
+
+ }
